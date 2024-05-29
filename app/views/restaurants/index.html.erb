@@ -1,0 +1,11 @@
+<h1>Yelp Clone</h1>
+<ul class="list-group">
+<% @restaurants.each do |restaurant| %>
+<li class="list-group-item">
+<%= restaurant.name %>
+<%= link_to "Check restaurant", restaurant %>
+</li>
+<% end %>
+</ul>
+
+<%= link_to "Add a new restaurant", new_restaurant_path %>
